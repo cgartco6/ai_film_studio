@@ -1,0 +1,29 @@
+studio:
+  name: AI Film Studio
+  version: 1.0.0
+
+gpu:
+  enabled: true
+  mixed_precision: fp16
+
+render:
+  width: 1920
+  height: 1080
+  fps: 24
+
+audio:
+  sample_rate: 48000
+  channels: 2
+
+storage:
+  assets_dir: storage/assets
+  renders_dir: storage/renders
+
+scheduler:
+  workers: 4
+
+models:
+  video: animatediff
+  voice: xtts
+  music: musicgen
+  lipsync: wav2lip
